@@ -70,16 +70,17 @@ Node Connectivity
   * Unmetered preferred
   * Deployed with firewalled access to other mainnet consensus nodes
 * Node deployed in dedicated \(isolated\) DMZ network
-  * Static IP \(FQDN is not supported\)
+  * Static IP \(FQDN is not supported\), node must be directly addressable to this IP via any NAT configuration
   * TCP Port 50111 open to 0.0.0.0/0
   * TCP Port 50211 open to 0.0.0.0/0
   * TCP Port 50212 open to 0.0.0.0/0
   * TCP Port 80 open egress to 0.0.0.0/0 \(for Ubuntu OS package repository connectivity\)
   * TCP Port 443 open egress to 0.0.0.0/0
+  * UDP Port 123 open to your preferred ntp time server pool. [htpdate](https://github.com/angeloc/htpdate) is a useful alternative to ntp.
 
 Proxy Connectivity
 
-* Static IP address \(FQDN not supported\)
+* Static IP address \(FQDN not supported\), proxy must be directly addressable to this IP via any NAT configuration
 * 200Mb/s internet connectivity
 * TCP Port 50211 open to 0.0.0.0/0
 * TCP Port 50212 open to 0.0.0.0/0
@@ -99,6 +100,9 @@ Proxy Connectivity
   * Debian
   * BSD not supported
   * CentOS deprecated for 2022
+* Docker Requirements
+  * Version 20.10.6 or higher
+  * Docker Root Dir must be on 5TB volume
 
 ## Network Topology /\(Typical Corporate Datacenter Configuration/\)
 
