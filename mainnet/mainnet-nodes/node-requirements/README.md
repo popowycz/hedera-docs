@@ -81,7 +81,7 @@ Node Connectivity
 Proxy Connectivity
 
 * Static IP address \(FQDN not supported\), proxy must be directly addressable to this IP via any NAT configuration
-* 200Mb/s internet connectivity
+* 200Mb/s internet connectivity - sustained (not burstable)
 * TCP Port 50211 open to 0.0.0.0/0
 * TCP Port 50212 open to 0.0.0.0/0
 
